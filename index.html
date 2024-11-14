@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>User Registration Form</h1>
+<p> Kindly fill all the required fields</p>
+<header>
+<form action="https://httpbin.org/get" method="get" enctype="multipart/form-data">
+	<fieldset>
+<legend>Student details</legend>
+<label for=" First Name">First Name</label>
+<input type="text" name="First Name" id="First Name" autocomplete="on" required autofocus placeholder="Jane">
+<label for="Second Name">Second Name</label>
+<input type="text" name="Second Name" id="Second Name" autocomplete="on" required placeholder="Doe">
+<label for="Last Name">Last Name</label>
+<input type="text" name="Last Name" id="Last Name" autocomplete="on" required placeholder="Smith">
+<p></p>
+<label for="Age">Age</label>
+<input type="number" name="Age" id="Age" min="1" max="50">
+<label for="Date of Birth">Date of Birth</label>
+<input type="Date" name="Date of Birth" id="Date of Birth">
+<p>
+Attach your Passport Photo
+<label for="file">File</label>	
+<input type="file" name="file" id="file">
+</p>
+<label for="Password">Password</label>
+<input type="Password" name="Password" id="Password" required>
+<p>Gender</p>
+<label for="Gender">Gender</label>
+<select name="Gender">
+	<option value="male">Male</option>
+	<option value="female" selected>Female</option>
+	<option value="intersex">Intersex</option>
+</select>
+<p>Contact Details</p>
+<label for="email address">email address</label>
+<input type="email" name="address" id="address" placeholder="abx@gmail.com">
+<label for="contact">contact</label>
+<input type="tel" name="phone number" id="phone number" placeholder="0717240826" pattern="[0-9{4}-[0-9]{3}-[0-9]{3}">
+</fieldset>
+<fieldset>
+	<legend>Account Details</legend>
+	<p>Account Details</p>
+	<label for="accout number">account number</label>
+	<input type="number" name="">
+</fieldset>
+<fieldset>
+	<legend>Preference</legend>
+	<p>Preferred contact method</p>
+	<label for="Email">Email</label>
+	<input type="radio" id="contact" name="contact">
+<label for="phone">Phone</label>
+	<input type="radio" id="contact" name="contact">
+</fieldset>
+<fieldset>
+	<p>
+		<input type="checkbox" name="Do you want to receive promotional Email">Do you want to receive promotional Email
+	</p>
+</fieldset>
+<br>
+<fieldset>
+	<legend>Send us A Message</legend>
+	<label for="Message">Your Message</label>
+	<br>
+	<textarea name="Message" id="Message" cols="30" rows="10" placeholder="Type your Message here"></textarea>
+	<br>
+	<button type="Submit">Submit</button>
+	<button type="reset">reset</button>
+</fieldset>
+</form>
+</header>
+</body>
+</html>
